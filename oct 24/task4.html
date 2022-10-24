@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: top;background-color:black; }
+.item2 { grid-area: midr;background-color:lightcoral; }
+.item3 { grid-area: midg;background-color:lightseagreen; }
+.item4 { grid-area: bottom;background-color:lightskyblue;}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    '  top top top top top'
+    ' midr midr midr midg midg '
+    'bottom bottom bottom bottom bottom';
+  gap: 5px;
+  background-color:white;
+  padding: 5px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 30px 0 30px 0;
+}
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="item1"></div>
+  <div class="item2"></div>  
+  <div class="item3"></div>
+  <div class="item4"></div>
+</div>
+
+</body>
+</html>
